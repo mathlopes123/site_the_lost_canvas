@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(102, 102, 102);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+#cabecalho{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#lista-criaturas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+#lista-criaturas div{
+    background-color: rgb(65, 65, 65);
+    border-radius: 10px;
+    box-shadow: 0 4px black;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+#lista-criaturas div:hover{
+    transform: scale(1.05);
+}
