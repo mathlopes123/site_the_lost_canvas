@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Cavaleiros do Zodíaco: The lost Canvas</title>
+    <title>Cavaleiros do Zodíaco: The Lost Canvas</title>
 </head>
 <body>
-    <header id="cabecalho">
-        <h1>Cavaleiro do Zodíaco: The Lost Canvas</h1>
-        <p>Escolha um Cavaleiro para saber mais!</p>
+    <div class="background-overlay"></div>
+    
+    <header class="header">
+        <h1>Cavaleiros do Zodíaco: The Lost Canvas</h1>
+        <p>Escolha um Cavaleiro para conhecer sua história!</p>
     </header>
-    <center>
-    <section id="lista-criaturas">
-       <!--itens gerados dinamicamente-->
-    </section>
 
-    <section id="detalhes-criaturas">
-        <h2 id="nome-criatura">Nome</h2>
-        <img id="imagem-criatura" src="" alt="imagem-criatura">
-        <p id="descricao-criatura">Descrição do Cavaleiro</p>
-    </section>
+    <main class="main-container">
+        <section class="characters-grid" id="characters-grid">
+            <!-- Personagens serão inseridos aqui -->
+        </section>
+
+        <section class="character-details" id="character-details">
+            <div class="details-content">
+                <div class="character-image-large">
+                    <img id="character-image-large" src="/placeholder.svg" alt="Personagem selecionado">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="character-info">
+                    <h2 id="character-name">Selecione um Cavaleiro</h2>
+                    <p id="character-description">Clique em um dos Cavaleiros acima para conhecer sua história e poderes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
-</center>
 </body>
 </html>
